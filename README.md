@@ -5,9 +5,9 @@
 First, you need to arrange the files as shown in the picture. For our project, we only need the following five files: AI.py, News Hotspot AI Personalized Focus.py, RUN.py, News Interface.py, and Interface.py. You can ignore the other files in the picture.
 !![image](https://github.com/user-attachments/assets/ba66e379-298c-48f8-9b9b-9ce9430dab66)
 
-注意,在AI.新闻热点AI个性化聚焦.PY文件内的messages=[{'role': 'user', 'content':''}处也就是红框content后面填写你的能力这样它才能关于有你的能力,如果你也和我一样遭遇了被冷落的待遇别忘了在AI.PY中的conntent最后附上你的情感状况,让AI结合你的能力好好安慰一下你
+注意,在AI.py和新闻热点AI个性化聚焦.PY文件内的messages=[{'role': 'user', 'content':''}处也就是红框content后面填写你的能力这样它才能关于有你的能力,如果你也和我一样遭遇了被冷落的待遇别忘了在AI.PY中的conntent最后附上你的情感状况,让AI结合你的能力好好安慰一下你
 
-Please note that in the file AI.News Hotspot AI Personalized Focus.PY, you need to fill in your abilities in the content field of the messages list, like this: messages=[{'role': 'user', 'content':'Your abilities here'}]. This will allow the AI to understand your capabilities. If you, like me, have experienced being neglected, don't forget to also include your emotional state at the end of the content in the AI.PY file, so that the AI can take your abilities and emotions into account and offer you some comfort.
+Please note that in the file AI.News Hotspot AI.py and Personalized Focus.PY, you need to fill in your abilities in the content field of the messages list, like this: messages=[{'role': 'user', 'content':'Your abilities here'}]. This will allow the AI to understand your capabilities. If you, like me, have experienced being neglected, don't forget to also include your emotional state at the end of the content in the AI.PY file, so that the AI can take your abilities and emotions into account and offer you some comfort.
 ![image](https://github.com/user-attachments/assets/fd7fc6de-2f68-433c-bfe5-be462c0952e8)
 还需注意的是在run.py文件中的红框位置处需要填写正确的文件路径
 
