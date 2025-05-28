@@ -3,7 +3,7 @@ all_news=['网络爬虫','全栈架构','网络小说家','视频剪辑','服务
 for t in all_news:
     from zhipuai import ZhipuAI
 
-    client = ZhipuAI(api_key='9b68979cc61b4d00aa6d1f67c8746340.Qdh0RUTqbTQTKAwA')  # 填写您自己的APIKey
+    client = ZhipuAI(api_key='')  # 填写您自己的APIKey
 
     response = client.web_search.web_search(
         search_engine="search-pro",
