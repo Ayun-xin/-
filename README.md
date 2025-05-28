@@ -2,6 +2,8 @@
 
 # This is your very own CIA, using their daily collection of information from around the world to bring you the most useful insights! Make today’s you better than yesterday’s you. I will leverage the GLM-4 interface to conduct real-time web searches for news, and then utilize the DeepSeek-R1 interface to synthesize and summarize the most valuable information for you. Every morning when you turn on your computer, two windows will pop up, filled with the most up-to-the-minute and relevant major events.
 可以直接观看我发布的视频来了解这个项目:https://www.bilibili.com/video/BV1cCj2ztEy2/?spm_id_from=333.1387.favlist.content.click&vd_source=e77e017189e0b6249e9f3fb9193a6c89
+
+
 一.配置前的准备工作:
 
 一.Preparation
