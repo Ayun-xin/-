@@ -1,23 +1,48 @@
-# 这是一个可以为你显示当下符合你能力的工具和对于你能力有利新闻的个人情报机构项目,立志于像情报机构一样为你时刻提供最新最好对你最有利的新闻和工具,让我们每天都可以跟着时代一起进步
-# This is a personal intelligence project that can display tools and news that are currently suitable for your abilities and beneficial to you. It aims to provide you with the latest and best news and tools, just like an intelligence agency, so that we can all advance with the times every day.
-首先你需要把文件像图片里一样放好,我们的项目里需要的仅有AI.PY,新闻热点AI个性化聚焦.PY,RUN.PY,新闻界面.py,界面.py这五个文件,而图片中其他的文件我们不需要理会
+# 这是独属于你的中情局,用他们每天从世界上收集对你最有用的信息吧!让今天的自己都比昨天的自己更好,我通过GLM-4提供的接口来实现网络搜索实时新闻,然后通过deepseek-R1接口来综合总结对你最有用的消息,最后在每天你打开电脑时就会弹出两个窗口,里面都是最即时最对你有用大事件哦
 
-First, you need to arrange the files as shown in the picture. For our project, we only need the following five files: AI.py, News Hotspot AI Personalized Focus.py, RUN.py, News Interface.py, and Interface.py. You can ignore the other files in the picture.
-!![image](https://github.com/user-attachments/assets/ba66e379-298c-48f8-9b9b-9ce9430dab66)
+# This is your very own CIA, using their daily collection of information from around the world to bring you the most useful insights! Make today’s you better than yesterday’s you. I will leverage the GLM-4 interface to conduct real-time web searches for news, and then utilize the DeepSeek-R1 interface to synthesize and summarize the most valuable information for you. Every morning when you turn on your computer, two windows will pop up, filled with the most up-to-the-minute and relevant major events.
+一.配置前的准备工作:
 
-注意,在AI.py和新闻热点AI个性化聚焦.PY文件内的messages=[{'role': 'user', 'content':''}处也就是红框content后面填写你的能力这样它才能关于你的能力提供信息,当然如果你也和我一样遭遇了被女孩冷落的情况别忘了在AI.PY中的conntent最后附上你的情感状况,让AI结合你的能力好好安慰一下你
+一.Preparation
 
-Note: In the AI.py and News Hotspot AI Personalized Focus.py files, you need to fill in your abilities in the content field of the messages=[{'role': 'user', 'content':''}] section, which is indicated by the red box. This allows the AI to provide information relevant to your abilities. Of course, if you, like me, are experiencing being ignored by a girl, don't forget to also include your emotional state at the end of the content in AI.py. This will enable the AI to offer you some comforting words based on your abilities and feelings.
-![image](https://github.com/user-attachments/assets/fd7fc6de-2f68-433c-bfe5-be462c0952e8)
-还需注意的是在run.py文件中的红框位置处需要填写正确的文件路径
+1.首先你得获得阿里云百炼模型和GLM-4的APIKAY,这是阿里云接口的网址:https://help.aliyun.com/zh/model-studio/developer-reference/get-api-key,这是GLM-4接口的网址:https://bailian.console.aliyun.com/?tab=model#/api-key
 
-Also, please note that you need to fill in the correct file path at the red框 position in the run.py file.
-![image](https://github.com/user-attachments/assets/b77f221f-5430-4b0a-bee8-342399dd2f03)
-接下来你需要用python中的打包文件为exe的功能,将RUN.PY,新闻界面.py,界面.py这三个文件全部打包为exe文件,然后就出现了build和dist文件夹,在dist文件夹中你需要创建两个空的txt文件,如图片所示
+1.you need to obtain the API KEY for the Aliyun Bailian Model and GLM-4. Here is the link to the Aliyun interface: https://help.aliyun.com/zh/model-studio/developer-reference/get-api-key, and here is the link to the GLM-4 interface: https://bailian.console.aliyun.com/?tab=model#/api-key
 
-Next, you need to use the "package files into exe" feature in Python to convert RUN.PY, News Interface.py, and Interface.py into executable files. This will create build and dist folders. In the dist folder, you need to create two empty txt files as shown in the picture.
+2.你得确保在这四个文件中被我标注为红框的地方都是你的能力
+
+2.You need to ensure that the areas marked with red boxes in these four documents all reflect your capabilities.
+![image](https://github.com/user-attachments/assets/e455de5a-b8b8-4059-970c-19ab0ab67f33)
+![image](https://github.com/user-attachments/assets/5771f5a8-67a4-4a46-b653-6cc85e31a458)
+![image](https://github.com/user-attachments/assets/1822f904-092a-46bb-826b-c3a07bd2e51d)
+![image](https://github.com/user-attachments/assets/8f35f591-71e7-4e52-8798-b570077ba2c1)
+请确保你在第3,4个文件上方的红框处填写的和1,2个文件中红框处填写的一致
+
+Please ensure that the information you fill in the red boxes above the 3rd and 4th documents is consistent with what you filled in the red boxes in the 1st and 2nd documents.
+
+二.正式部署开始:
+
+二.real start:
+
+将所有文件都先放在一起
+
+Put all the files together first
+
+![image](https://github.com/user-attachments/assets/878da9a0-2016-4e2d-b219-773e3c951b7f)
+
+请你将run.py,新闻界面.py,界面.py,三个文件用pyinstaller打包为exe程序,newsput.txt,output.txt都得新建后放在dist文件夹内
+
+Please package the run.py, news_interface.py, and interface.py files into exe programs using pyinstaller, and create newsput.txt and output.txt files and place them in the dist folder.
+
 ![image](https://github.com/user-attachments/assets/3b2d7196-e5fb-47a3-a7f4-8059fe086fad)
-last_run.txt文件会自动生成无需理会,然后将这三个exe程序的快捷方式全都拖放到我们的开机启动文件夹内
+
+注意:run.exe得和几个AI文件靠在一起
+
+Note: run.exe should be placed close to the AI files.
+
+![image](https://github.com/user-attachments/assets/9d3fc367-d846-4f94-9b33-ab9204db5965)
+
+last_run.txt文件会自动生成无需理会,然后生成这三个exe程序的快捷方式,将他们全都拖放到我们的开机启动文件夹内
 
 The last_run.txt file will be generated automatically, so you don't need to worry about it. Then, drag the shortcuts of all three exe programs into our startup folder.
 ![image](https://github.com/user-attachments/assets/dcd1889f-5218-4ce2-b001-0f305be3b9df)
@@ -29,6 +54,6 @@ Here’s how it looks:
 And that’s it, our project is complete! The RUN file checks after startup if it has been more than 24 hours since the last run. If so, it will automatically run AI.py to fetch the latest news that is relevant to our capabilities and beneficial to us. If it has been seven days, it will update us with the latest information about tools related to our capabilities.
 This is the final result.
 ![image](https://github.com/user-attachments/assets/130c14f4-ae1b-403d-abcb-590ab146c369)
-接下来我也会不断的完善它,让他可以有更多和更加自动化的ai情报服务
+接下来我也会不断的完善它,让他可以有更多和更加自动化的情报服务,我的最终目标是实现更加完善的情报服务,我一定可以的!
 
 Next, I will continuously improve it, enabling it to provide more and increasingly automated AI intelligence services.
